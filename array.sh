@@ -19,4 +19,6 @@ echo "${os[4]}"
 
 echo "${!os[@]}"
 
+# this script is to calculate the units
 
+echo "${#os[@]}"
