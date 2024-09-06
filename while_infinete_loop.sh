@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while :
+while True :
 
 do
 	echo "helloworld!"
