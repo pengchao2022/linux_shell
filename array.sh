@@ -15,4 +15,8 @@ echo "${os[3]}"
 
 echo "${os[4]}"
 
+# this script is to print the array unit number here
+
+echo "${!os[@]}"
+
 
