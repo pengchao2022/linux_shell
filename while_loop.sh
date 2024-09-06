@@ -9,6 +9,8 @@ while [ $n -le 10 ]
 do
 
 	echo "$n"
+	
+	echo "GOD BLESS USA!"
 
         n=$(( $n+1 ))
 
