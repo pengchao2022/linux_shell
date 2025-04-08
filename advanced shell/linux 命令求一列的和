@@ -1,0 +1,14 @@
+allen@ubuntu:~/shell$ cat chengji.txt 
+
+allen 90
+kate 89
+lily 80
+jim 90
+wengfan 102
+lijiacheng 103
+
+
+
+
+allen@ubuntu:~/shell$ awk '{sum+=$2} END{print "the total is:"sum}' chengji.txt
+the total is:554
