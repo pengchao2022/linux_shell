@@ -1,0 +1,23 @@
+#!/bin/bash
+
+user=root
+pass=1234567
+backfile=/home/allen/mysql/backup
+[ ! -d $backfile ] && mkdir -p $backfile
+cmd="mysql -u${user} -p${pass}"
+dump="mysqldump -u$user -p$pass"
+dblist=`$cmd -e "show databases;" 2>/dev/null | sed 1d | egrep -v '_schema|mysql'`
+echo "the list database which need to backup:"
+echo $dblist
+echo "starting backup"
+for db_name in $dblist
+
+do
+        printf "we are backing up the database now:%s" ${db_name}
+        $dump ${db_name} 2>/dev/null | gzip > ${backfile}/${db_name}_$(date +%m%d).sql.gz
+        printf ", finished the backup\n"
+done
+echo "All finished the backup!"
+
+
+~                                          
