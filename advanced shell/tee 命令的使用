@@ -20,6 +20,17 @@ allen@ubuntu:~/shell$ ls
 peng.txt  test.json
 
 
+举例子：
+
+allen@ubuntu:~/shell$ tee /home/allen/shell/my2025.txt <<-'EOF'
+> hello allen
+> this is kate
+> how are you kate
+> fine!
+> EOF
+
+
+
 allen@ubuntu:~/shell$ cat test.json 
 {
     "registry-mirrors": [
