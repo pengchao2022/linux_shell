@@ -1,0 +1,7 @@
+For Example:
+
+allen@ubuntu:~/shell$ if [ -e /home/allen/shell/chengji.txt ];then echo "File exist!";else echo "File is not existls";fi
+File exist!
+allen@ubuntu:~/shell$ if [ -e /home/allen/shell/chengji1.txt ];then echo "File exist!";else echo "File is not existls";fi
+File is not existls
+allen@ubuntu:~/shell$ 
