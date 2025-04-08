@@ -1,0 +1,25 @@
+
+
+#!/bin/bash
+
+filenames=$(ls /home/allen/shell/temp/temp2)
+
+number=1
+
+for name in $filenames
+
+do
+        printf "all the file names before rename them: %s " ${name}
+
+        newname=${name}"-"${number}
+
+        rename ${name} ${newname} /home/allen/shell/temp/temp2/*
+
+        let number++
+
+        printf "All the file names after renamed:%s \n" ${newname}
+
+
+done
+
+~                                                               
