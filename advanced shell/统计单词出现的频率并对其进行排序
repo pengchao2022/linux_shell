@@ -216,3 +216,18 @@ allen@ubuntu:~/shell$ awk -F "[ ,.]" '{for(i=1;i<=NF;i++){S[$i]++}} END{for(key 
 1 14
 allen@ubuntu:~/shell$ 
 
+排序并取前十条：
+
+allen@ubuntu:~/shell$ awk -F "[ ,.]" '{for(i=1;i<=NF;i++){S[$i]++}} END{for(key in S)print S[key],key}' trump.txt | sort -rn | head 
+22 
+12 the
+5 Trump
+5 in
+5 and
+4 of
+3 president
+3 he
+2 to
+2 Republican
+allen@ubuntu:~/shell$ 
+
