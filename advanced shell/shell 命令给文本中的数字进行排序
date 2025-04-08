@@ -1,0 +1,33 @@
+
+
+allen@ubuntu:~/shell$ cat number1.txt 
+
+88
+9
+609
+1
+56
+22
+9
+8790
+33
+12
+67
+0
+
+allen@ubuntu:~/shell$ sort -n number1.txt 
+
+
+0
+1
+9
+9
+12
+22
+33
+56
+67
+88
+609
+8790
+allen@ubuntu:~/shell$ 
