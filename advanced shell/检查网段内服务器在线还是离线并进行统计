@@ -1,0 +1,24 @@
+
+#!/bin/bash
+
+count=0
+
+for i in 192.168.56.{1..254}
+
+do
+        receive=$(ping $i -c 2 | awk 'NR==6{print $4}')
+        if [ $receive -gt 0 ]
+        then
+                echo "${i} is online now!"
+                let count++
+        else
+                echo "${i} is not online currently!"
+        fi
+
+done
+echo "the total numbers of online servers are:${count}"
+
+
+~                                                                                                                               
+~                                                                                                                               
+~                                                 
