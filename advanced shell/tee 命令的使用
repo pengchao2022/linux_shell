@@ -1,0 +1,33 @@
+
+
+allen@ubuntu:~/shell$ echo "Hello pengchaoma " | tee peng.txt
+Hello pengchaoma 
+allen@ubuntu:~/shell$ ls
+peng.txt
+
+
+tee /home/allen/shell/test.json <<-'EOF'
+> {
+>     "registry-mirrors": [
+>     peng.txt "https://docker-0.unsee.tech",
+>         "https://docker-cf.registry.cyou",
+>         "https://docker.1panel.live"
+>     ]
+> }
+> EOF
+
+allen@ubuntu:~/shell$ ls
+peng.txt  test.json
+
+
+allen@ubuntu:~/shell$ cat test.json 
+{
+    "registry-mirrors": [
+    peng.txt "https://docker-0.unsee.tech",
+        "https://docker-cf.registry.cyou",
+        "https://docker.1panel.live"
+    ]
+}
+
+
+
