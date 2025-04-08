@@ -231,3 +231,18 @@ allen@ubuntu:~/shell$ awk -F "[ ,.]" '{for(i=1;i<=NF;i++){S[$i]++}} END{for(key 
 2 Republican
 allen@ubuntu:~/shell$ 
 
+按照字母进行排序：
+
+allen@ubuntu:~/shell$ awk -F "" '{for(i=1;i<=NF;i++){S[$i]++}} END{for(key in S)print S[key],key}' trump.txt | sort -rn | head 
+137  --------------- 这是空格
+84 e
+62 n
+61 i
+49 s
+48 a
+47 t
+40 r
+36 o
+27 h
+allen@ubuntu:~/shell$ 
+
