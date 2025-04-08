@@ -1,0 +1,10 @@
+
+allen@ubuntu:~/shell$ grep -r "123" /home/allen/shell/
+/home/allen/shell/jingdong.txt:123
+/home/allen/shell/jingdong.txt:123
+/home/allen/shell/jingdong.txt:12345678
+
+
+allen@ubuntu:~/shell$ grep -r "123" /home/allen/shell/ | cut -d ":" -f 1 | sort -u
+/home/allen/shell/jingdong.txt
+allen@ubuntu:~/shell$ 
