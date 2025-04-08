@@ -1,0 +1,14 @@
+
+#!/bin/bash
+
+ULIST=$(cat /home/allen/users.txt)
+
+for UNAME in $ULIST
+
+do
+	useradd $UNAME
+	echo "123456" | passwd --stdin $UNAME &>/dev/null
+	[ $? -eq 0 ] && echo "${UNAME} has been succefully created with the initial password!"
+
+done
+
