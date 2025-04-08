@@ -9,3 +9,9 @@ allen@ubuntu:~$ cat /etc/os-release | tr 'e' '&'
 allen@ubuntu:~$ cat /etc/os-release | tr [:upper:] [:lower:]     --------------   将所有大写转换成小写字母 
 
 
+allen@ubuntu:~$ cat /etc/os-release | tr [:lower:] [:upper:]       --------------   将所有小写转换成大写字母
+
+
+
+
+
