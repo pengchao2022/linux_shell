@@ -1,0 +1,27 @@
+
+#!/bin/bash
+
+read -t 30 -p "Please type how many files do you want to create here:" n
+
+test=$(echo $n | sed 's/[0-9]//g')
+
+if [ -n "$n" -a -z "$test" ]
+
+then
+        for ((i=0;i<$n;i=i+1))
+        do
+                name=$(date +%N)
+                [ ! -d ./temp ] && mkdir -p ./temp
+                touch "./temp/$name"
+                echo "File $name created successful！"
+
+        done
+        else
+                echo "Failed to Create!"
+                exit 1
+
+fi
+
+
+~                                                                                                                               
+~                                    
