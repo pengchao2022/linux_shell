@@ -3,4 +3,13 @@
 cat /etc/passwd | awk -F":" '{print $1}'
 
 
+For loop:
+
+user=$(cat /etc/passwd | awk -F":" '{print $1}')
+allen@ubuntu:~/shell$ for i in $user
+> do 
+> echo $i
+> done
+
+
   
