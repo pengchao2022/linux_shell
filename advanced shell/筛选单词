@@ -1,0 +1,26 @@
+
+allen@ubuntu:~/shell$ echo "this is the day i have been looking forward for two and three years, every once in a while , a revelutionary product comes along that changes everything , one can do this in your career , apple has been so fortunate." | awk -F "[ ,.]" '{for(i=1;i<=NF;i++){if(length($i)>3){print $i}}}'
+this
+have
+been
+looking
+forward
+three
+years
+every
+once
+while
+revelutionary
+product
+comes
+along
+that
+changes
+everything
+this
+your
+career
+apple
+been
+fortunate
+allen@ubuntu:~/shell$ 
