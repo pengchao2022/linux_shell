@@ -1,0 +1,4 @@
+
+
+allen@ubuntu:~$ docker ps | grep -v "CONTAINER"| awk '{print $1}'
+205909c79474
