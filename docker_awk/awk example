@@ -2,3 +2,8 @@
 
 allen@ubuntu:~$ docker ps | grep -v "CONTAINER"| awk '{print $1}'
 205909c79474
+
+allen@ubuntu:~$ docker ps | grep -v "CONTAINER" | awk '{print $1}'
+c8a0348d3b7d
+205909c79474
+
