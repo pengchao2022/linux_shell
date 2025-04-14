@@ -1,0 +1,7 @@
+
+
+allen@ubuntu:~$ ip_addr=$(ifconfig ens33 | grep netmask | awk '{print $2}')
+allen@ubuntu:~$ echo ip_addr
+ip_addr
+allen@ubuntu:~$ echo $ip_addr
+172.16.219.132
