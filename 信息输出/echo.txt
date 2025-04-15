@@ -1,0 +1,29 @@
+1, echo 输出 默认换行
+
+allen@ubuntu:~/shell$ echo "hello kitty"
+hello kitty
+allen@ubuntu:~/shell$ 
+
+2, echo 输出 不换行
+allen@ubuntu:~/shell$ echo -n "hello kitty"
+hello kittyallen@ubuntu:~/shell$ 
+
+3, echo 输出 中间换行
+hello kittyallen@ubuntu:~/shell$ echo -e "Hello \nkitty"
+Hello 
+kitty
+allen@ubuntu:~/shell$ 
+
+4, echo 带有颜色的输出
+allen@ubuntu:~/shell$ echo -e "\033[44;37m hello,kitty\033[0m"
+ hello,kitty
+allen@ubuntu:~/shell$ 
+
+5, echo 输出背景以红色显示
+allen@ubuntu:~/shell$ echo -e "\033[41;37m hello,kitty\033[0m"
+ hello,kitty
+allen@ubuntu:~/shell$ 
+
+
+
+
