@@ -1,0 +1,34 @@
+1, 使用 echo 来追加文件到 file1.txt , 注意 该方式不需要提前创建 file1.txt
+如：
+
+allen@ubuntu:~/shell$ cat file1.txt 
+allen 迪士尼
+welcome to 迪士尼 
+allen@ubuntu:~/shell$ echo "welcome to shanghai" >> file1.txt 
+allen@ubuntu:~/shell$ cat file1.txt 
+allen 迪士尼
+welcome to 迪士尼 
+welcome to shanghai
+allen@ubuntu:~/shell$ 
+
+
+2，使用 cat , eof ... eof 来追加文件到 file2.txt , 注意： 该种方式需要提前创建好 文件 file2.txt
+
+allen@ubuntu:~/shell$ touch file2.txt
+allen@ubuntu:~/shell$ cat > file2.txt <<-EOF
+> 你好，allen
+> 欢迎来到上海
+> welcome to Shanghai
+> 欢迎来到迪士尼乐园
+> welcome to Disney land
+> EOF
+allen@ubuntu:~/shell$ 
+allen@ubuntu:~/shell$ cat file2.txt 
+你好，allen
+欢迎来到上海
+welcome to Shanghai
+欢迎来到迪士尼乐园
+welcome to Disney land
+allen@ubuntu:~/shell$ 
+
+
