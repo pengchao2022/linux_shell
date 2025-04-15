@@ -1,0 +1,16 @@
+#!/bin/bash
+arg="$1"
+xianshi(){
+        name="$1"
+        echo "hello - ${name}"
+        echo "Hello Disney land!"
+}
+
+xianshi "${arg}"
+
+~                       
+
+allen@ubuntu:~/shell$ source func01.sh lily
+hello - lily
+Hello Disney land!
+allen@ubuntu:~/shell$ 
