@@ -2,4 +2,4 @@
 
 # if you never know what's linux shell, you can follow step by step
 
-# written by pengchao in Shanghai
+written by pengchao in Shanghai
